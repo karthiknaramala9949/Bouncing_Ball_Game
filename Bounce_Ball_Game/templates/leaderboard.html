@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Ball Game with Leaderboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="history">
+<h1>Leaderboard</h1>
+<div>
+    {%if leaderboard%}
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+    {%for leader in leaderboard%}
+    <tr>
+        <td>{{ leader['name'] }}</td>
+        <td>{{ leader['score'] }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    {% else %}
+    <p>No history available.</p>
+    {% endif %}
+</div>
+<form method="POST" action="/clear_data">
+    <button type="submit" class="clear-button">Clear All Workout Data</button>
+</form>
+<a href="/">Back to Home</a>
+
+</body>
+</html>

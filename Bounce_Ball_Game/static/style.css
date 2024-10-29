@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#game-container {
+    background-image: url('https://i.ibb.co/4JF951Z/bouncing-bag.png');
+    background-size: cover;
+    position: relative;
+    width: 920px;
+    height: 600px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+
+#leaderboard {
+    margin-top: 20px;
+}
+
+.leaderboard-cls{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#play-again-btn {
+    display: none; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -500%);
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(15, 13, 13);
+    background-color: transparent;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+#play-again-btn:hover {
+    background-color:rgb(213, 43, 43);
+}
+/*CSS for Leaderboard Table*/
+table {
+    color: white;
+    width: cover;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgb(3, 24, 43);
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+/*CSS for clear button in .leaderboard history*/
+.clear-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.clear-button:hover {
+    background-color: darkred;
+}
+.history{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  
+}
+
+/* Css for View history Button*/
+.btn{
+    background-color: rgb(20, 197, 182);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
